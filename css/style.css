@@ -1,0 +1,60 @@
+body {
+  margin: 0px;
+  background: url(../images/back.jpg) center center fixed no-repeat;
+  background-size: cover;
+}
+
+#logo {
+  text-align:center;
+  position: relative;
+  margin-bottom: 0;
+  animation: drop 2s 1 forwards;
+  opacity: 0;
+}
+
+@keyframes drop {
+  0% {top:-450px; opacity: 0;}
+  50% {top:-100px; opacity:0.5;}
+  100% {top:-210px; opacity:1;}
+}
+
+h1#title {
+  position: absolute;
+  top: 270px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  letter-spacing: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: zoom 2s 1 forwards;
+}
+
+@keyframes zoom {
+  0% {font-size:small; opacity: 0;}
+  50% {font-size:small; opacity:0;}
+  100% {opacity:1;}
+}
+
+#menu {
+  position: absolute;
+  top: 380px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-content {
+  color: white;
+  margin: 0 40px;
+  text-align: center;
+  animation: gather 2s 1 forwards;
+}
+
+@keyframes gather {
+  0% {margin: 0 60px; font-size: 1.2rem; opacity:0;}
+  50% {margin: 0 60px; font-size: 1.2rem; opacity:0;}
+  100% {margin: 0 40px; font-size: 1.2rem; opacity:1;}
+}
